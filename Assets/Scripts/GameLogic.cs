@@ -13,8 +13,14 @@ public class GameLogic : MonoBehaviour
     private bool isNotEnded;
     public float negativeOffset = 1;
 
+<<<<<<< Updated upstream
     public AudioClip soundSpace;
 
+=======
+    public AudioClip clipSpaceKey;
+
+    // Start is called before the first frame update
+>>>>>>> Stashed changes
     void Start()
     {
         ResetScene();
@@ -24,7 +30,11 @@ public class GameLogic : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && isNotEnded)
         {
+<<<<<<< Updated upstream
             SoundManager.Instance.PlaySound(soundSpace);
+=======
+            SoundManager.Instance.PlaySound(clipSpaceKey);
+>>>>>>> Stashed changes
             if (!isOn)
             {
                 //presiona Espacio sin haber iniciado el juego
